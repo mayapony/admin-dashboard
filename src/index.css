@@ -6,3 +6,7 @@
   font-family: 'Nunito', sans-serif;
   margin: 0;
 }
+
+.MuiCircularProgress-colorPrimary {
+  color: rgb(66, 125, 234) !important;
+}
