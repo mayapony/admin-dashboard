@@ -8,7 +8,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 export const Featured = () => {
   return (
     <div
-      className="flex flex-col items-center justify-between gap-2 rounded-md p-3 shadow-md"
+      className="flex grow flex-col items-center justify-between gap-2 rounded-xl  p-3 shadow-md"
       style={{
         flex: 1,
       }}

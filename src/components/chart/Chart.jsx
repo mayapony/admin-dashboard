@@ -4,13 +4,8 @@ import { data } from './data';
 
 export const Chart = () => {
   return (
-    <div
-      className="h-70 flex-1 rounded-md p-10 shadow-lg"
-      style={{
-        flex: 2,
-        height: '420px',
-      }}
-    >
+    <div className="flex w-2/3  flex-col rounded-md p-3 shadow-xl">
+      <h1 className="font-bold text-gray-500">Last 6 Months(Revenue)</h1>
       <ResponsiveLine
         data={data}
         xScale={{ type: 'point' }}
@@ -38,7 +33,9 @@ export const Chart = () => {
           legendPosition: 'middle',
         }}
         pointSize={10}
-        margin={{ top: 50, right: 50, bottom: 50, left: 50 }}
+        margin={{ top: 20, right: 50, bottom: 50, left: 50 }}
+        enableArea={true}
+        curve="natural"
       />
     </div>
   );
